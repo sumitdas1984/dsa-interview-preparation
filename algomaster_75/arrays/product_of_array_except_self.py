@@ -1,5 +1,5 @@
-# Bruteforce solution | time: O(n^2), space: O(n) 
-def product_except_self_bruteforce(arr):
+# Brute force solution | time: O(n^2), space: O(n) 
+def product_except_self_brute_force(arr):
     n = len(arr)
     result = [1]*n
     for i in range(n):
@@ -28,7 +28,9 @@ def product_except_self_prefix_suffix(arr):
 
 
 nums = [1,2,3,4,5]
-answer = product_except_self_bruteforce(nums)
-print("answer bruteforce: ", answer)
+
+answer = product_except_self_brute_force(nums)
+print("answer brute force: ", answer)
+
 answer = product_except_self_prefix_suffix(nums)
 print("answer prefix_suffix: ", answer)
